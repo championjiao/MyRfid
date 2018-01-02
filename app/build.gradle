@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+// ButterKnife-2
+apply plugin: 'android-apt'
+// greendao-2
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.jxb.myrfid"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    // ButterKnife-3
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //异步操作
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    //图片加载库   https://muyangmin.github.io/glide-docs-cn/
+    //compile 'com.github.bumptech.glide:glide:4.3.0'
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.3.0'
+    // greendao-3
+    compile 'org.greenrobot:greendao:3.2.2'
+    //json
+    compile 'com.alibaba:fastjson:1.2.41'
+    compile 'com.alibaba:fastjson:1.1.67.android'
+    //tabbar
+    compile 'com.hjm:BottomTabBar:1.1.2'
+    compile 'com.squareup.okio:okio:1.13.0'
+    compile project(':commonLib')
+}

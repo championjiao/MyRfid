@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="bottom_nav_normal">#00000000</color>
+    <color name="bottom_nav_pressed">#88CCEDC7</color>
+    
+</resources>

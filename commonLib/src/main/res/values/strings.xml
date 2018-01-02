@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="app_name">CommonLib</string>
+	<string name="content_description">content_description</string>
+</resources>
