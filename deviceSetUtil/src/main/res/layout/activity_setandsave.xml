@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEDEDE" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/model"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/model_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <!-- android:entries="@array/spinarr_model" -->
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="@string/str_btn"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:drawableLeft="@drawable/abc_checkbox"
+                android:id="@+id/enableCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enable"
+                android:textColor="#FF000000"
+                android:textSize="17sp" />
+            <!--
+                 <Button
+                android:id="@+id/readBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="@string/rea_btn"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/serialport"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/serialport_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/baudRate"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/baudRate_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- android:entries="@array/spinarr_baud" -->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutON_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- "上电" -->
+
+            <TextView
+                android:id="@+id/poweron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/poweron"
+                android:textColor="#FF000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <!-- 上电设置部分结束 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFADADAD" />
+
+        <!-- 下电设置 -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutOFF_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- "下电" -->
+
+            <TextView
+                android:id="@+id/poweroff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/poweroff"
+                android:textColor="#FF000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <!-- 下电GPIO -->
+
+        </RelativeLayout>
+
+        <!-- end -->
+    </LinearLayout>
+
+</ScrollView>

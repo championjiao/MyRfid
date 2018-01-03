@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DeviceSetUtil</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="model">"模块:"</string>
+    <string name="serialport">"串口:"</string>
+    <string name="enable">启用</string>
+    <string name="poweron">"上电:"</string>
+    <string name="poweroff">"下电:"</string>
+    <string name="str_poweron">1</string>
+    <string name="str_poweroff">0</string>
+    <string name="str_null">无</string>
+    <string name="str_btn">"保存设置"</string>
+    <string name="rea_btn">读取设置</string>
+    <string name="baudRate">波特率：</string>
+    
+
+    <string-array name="m10_models">
+        <item>H1</item>
+        <item>H2</item>
+        <item>H4</item>
+        <item>H5</item>
+        <item>H7</item>
+        <item>U1</item>
+        <item>U4</item>
+        <item>U5</item>
+        <item>U6</item>
+        <item>U7</item>
+        <item>U8</item>
+        <item>BD</item>
+        <item>BH</item>
+        <item>CD</item>
+    </string-array>
+    
+    <string-array name="m96_models">
+        <item >U6</item>
+        <item >BD</item>
+        <item >BH</item>
+    </string-array>
+    
+    <string-array name="m10SerialPort">
+        <item>/dev/ttySAC0</item>
+        <item>/dev/ttySAC1</item>
+        <item>/dev/ttySAC2</item>
+        <item>/dev/ttySAC3</item>
+    </string-array>
+    <string-array name="m10ASerialPort">
+        <item>/dev/ttyHSL0</item>
+        <item>/dev/ttyHSL1</item>
+    </string-array>
+    <string-array name="m96SerialPort">
+        <item>/dev/ttyHSL0</item>
+        <item>/dev/ttyHSL1</item>
+    </string-array>
+    <string-array name="m10_GPIO">
+        <item>ic14443a_enable</item>
+        <item>ic14443a_sw</item>
+        <item>infrared</item>
+        <item>rfid_enable</item>
+        <item>rfid_sw</item>
+        <item>r1000_enable</item>
+        <item>r1000_sw</item>
+        <item>ic15693_enable</item>
+        <item>ic15693_sw</item>
+        <item >gps_enable</item>
+        <item >gps_sw</item>
+        <item>bardecoder</item>
+    </string-array>
+    <string-array name="m10A_GPIO">
+        <item>gpio898</item>
+        <item>gpio899</item>
+        <item>gpio908</item>
+        <item>gpio909</item>
+        <item>gpio910</item>
+        <item>bardecoder</item>
+    </string-array>
+
+    <string-array name="m96_GPIO">
+        <item >gpio912</item>
+        <item >gpio914</item>
+        <item >gpio918</item>
+        <item >gpio928</item>
+    </string-array>
+</resources>

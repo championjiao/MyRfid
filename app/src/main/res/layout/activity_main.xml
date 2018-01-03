@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jxb.myrfid.MainActivity">
+    tools:context="com.jxb.myrfid.activity.MainActivity">
 
     <TextView
         android:id="@+id/test2"
@@ -16,10 +16,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.hjm.bottomtabbar.BottomTabBar
-        android:id="@+id/bottom_tab_bar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    </com.hjm.bottomtabbar.BottomTabBar>
+    <!--<com.hjm.bottomtabbar.BottomTabBar-->
+        <!--android:id="@+id/bottom_tab_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--&gt;-->
+    <!--</com.hjm.bottomtabbar.BottomTabBar>-->
 </android.support.constraint.ConstraintLayout>

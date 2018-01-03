@@ -3,10 +3,9 @@ package com.jxb.myrfid.service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.hardware.usb.UsbManager;
 import android.util.Log;
 
-import com.jxb.myrfid.MainActivity;
+import com.jxb.myrfid.activity.MainActivity;
 
 /**
  * Created by jxb on 2017-12-27.

@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 public class M10_GPIO {
 	
 	/**
-	 * GPSÄ£¿éÉÏµç
+	 * GPSæ¨¡å—ä¸Šç”µ
 	 */
 	public static void GPS_PowerOn(){
 		writeFile("/sys/devices/platform/odroid-sysfs/gps_enable", "1");
@@ -13,7 +13,7 @@ public class M10_GPIO {
 	}
 	
 	/**
-	 * GPSÄ£¿éÏÂµç
+	 * GPSæ¨¡å—ä¸‹ç”µ
 	 */
 	public static void GPS_PowerOff(){
 		writeFile("/sys/devices/platform/odroid-sysfs/gps_enable", "0");
@@ -66,7 +66,7 @@ public class M10_GPIO {
 		writeFile("/sys/ bus/platform/devices/odroid-sysfs/rfid_serial_switch", "0");
 	}
 	
-	//Ğ´Êı¾İ
+	//å†™æ•°æ®
 	private static void writeFile(String fileName,String writestr)
 	{
 	  try{

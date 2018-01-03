@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinarr_serialport">
+        <item>/dev/ttySAC0</item>
+        <item>/dev/ttySAC1</item>
+        <item>/dev/ttySAC2</item>
+        <item>/dev/ttySAC3</item>
+        <item>/dev/ttyHSL0</item>
+        <item>/dev/ttyHSL1</item>
+        <item>/dev/ttyHSL2</item>         
+    </string-array>
+    
+    <string-array name="spinarr_model">
+        <item>BD</item>  
+    	<item>BE</item>  
+    	<item>CB</item>  
+   	 	<item>CD</item>
+    	<item>CG</item> 
+    	<item>H1</item>
+    	<item>H2</item>
+    	<item>H7</item>
+    	<item>Id_card</item>
+    	<item>NFC</item>
+    	<item>U1</item>
+    	<item>U6</item>
+    	<item>U7</item>
+    	<item>U8</item>
+    	<item>W3</item>
+    	<item>W9</item>
+    </string-array>
+    
+    <string-array name="spinarr_baud">
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>  
+    	<item>115200</item>  
+    </string-array>
+    
+    
+</resources>
